@@ -2,3 +2,4 @@ target/
 lib/
 bin/
 Cargo.lock
+*.o

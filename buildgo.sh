@@ -2,6 +2,7 @@
 
 BIN=`pwd`/bin
 GOAPP=go-app
+GO=go
 
 ./buildlib.sh
 
@@ -11,5 +12,5 @@ cd $GOAPP
 
 export GOBIN=$BIN
 
-go get
-go install
+$GO get
+$GO install
