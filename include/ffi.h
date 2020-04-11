@@ -1,8 +1,17 @@
 #if !defined __FFI_H__
 #define __FFI_H__
 
-#include <cstdint>
+#include <stdint.h>
 
-extern "C" int32_t compute_value_a(int32_t, int32_t);
+#if defined __cplusplus
+extern "C"
+{
+#endif
+
+    int32_t compute_value_a(int32_t, int32_t);
+
+#if defined __cplusplus
+}
+#endif
 
 #endif

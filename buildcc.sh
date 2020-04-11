@@ -14,4 +14,4 @@ cd $CCAPP
 
 set -x
 
-$CXX --std=c++17 -o $BIN/$CCAPP main.cc -I$INCLUDE -L$LIB -lcrustgo -lpthread -ldl
+$CXX --std=c++17 -Wall -o $BIN/$CCAPP main.cc -I$INCLUDE -L$LIB -lcrustgo -lpthread -ldl

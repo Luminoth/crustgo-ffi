@@ -6,3 +6,6 @@ Messing around with mixing C++ / Go / Rust FFI
 
 * https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html#calling-rust-functions-from-other-languages
 * http://jakegoulding.com/rust-ffi-omnibus/
+* https://blog.filippo.io/rustgo/
+* https://karthikkaranth.me/blog/calling-c-code-from-go/
+* https://golang.org/cmd/cgo/
