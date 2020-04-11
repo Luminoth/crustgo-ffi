@@ -11,5 +11,6 @@ mkdir -p $BIN
 
 cd $CCAPP
 
-$CXX -c main.cc -o main.o
-$CXX -o $BIN/$CCAPP main.o -L$LIB -lcrustgo
+set -x
+
+$CXX --std=c++17 -o $BIN/$CCAPP main.cc -L$LIB -lcrustgo -lpthread -ldl

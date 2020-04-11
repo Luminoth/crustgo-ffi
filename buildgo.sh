@@ -12,5 +12,7 @@ cd $GOAPP
 
 export GOBIN=$BIN
 
+set -x
+
 $GO get
 $GO install
