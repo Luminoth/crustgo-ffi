@@ -3,9 +3,9 @@
 BIN=`pwd`/bin
 GOAPP=go-app
 
-mkdir -p $BIN
+./buildlib.sh
 
-cargo build
+mkdir -p $BIN
 
 cd $GOAPP
 

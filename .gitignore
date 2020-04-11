@@ -1,3 +1,4 @@
 target/
+lib/
 bin/
 Cargo.lock

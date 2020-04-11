@@ -3,9 +3,9 @@
 BIN=`pwd`/bin
 CCAPP=cc-app
 
-mkdir -p $BIN
+./buildlib.sh
 
-cargo build
+mkdir -p $BIN
 
 cd $CCAPP
 
