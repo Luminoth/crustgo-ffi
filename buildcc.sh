@@ -1,6 +1,9 @@
 #! /bin/sh
 
+BIN=`pwd`/bin
 CCAPP=cc-app
+
+mkdir -p $BIN
 
 cargo build
 
