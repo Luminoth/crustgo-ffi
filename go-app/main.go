@@ -2,7 +2,8 @@ package main
 
 import "log"
 
-// #cgo CFLAGS: -Wall -I${SRCDIR}/../include
+// #cgo CPPFLAGS: -I${SRCDIR}/../include
+// #cgo CXXFLAGS: -std=c++17 -Wall
 // #cgo LDFLAGS: -L${SRCDIR}/../lib -lcrustgo -lpthread -ldl
 // #include "ffi.h"
 import "C"

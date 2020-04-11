@@ -9,3 +9,4 @@ Messing around with mixing C++ / Go / Rust FFI
 * https://blog.filippo.io/rustgo/
 * https://karthikkaranth.me/blog/calling-c-code-from-go/
 * https://golang.org/cmd/cgo/
+* https://github.com/eqrion/cbindgen/blob/master/docs.md
