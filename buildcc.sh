@@ -1,6 +1,7 @@
 #! /bin/sh
 
 BIN=`pwd`/bin
+INCLUDE=`pwd`/include
 LIB=`pwd`/lib
 CCAPP=cc-app
 CXX=g++
@@ -13,4 +14,4 @@ cd $CCAPP
 
 set -x
 
-$CXX --std=c++17 -o $BIN/$CCAPP main.cc -L$LIB -lcrustgo -lpthread -ldl
+$CXX --std=c++17 -o $BIN/$CCAPP main.cc -I$INCLUDE -L$LIB -lcrustgo -lpthread -ldl
