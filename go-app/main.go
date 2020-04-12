@@ -9,8 +9,13 @@ import "log"
 import "C"
 
 func main() {
-	x := C.int(6)
-	y := C.int(7)
+	input := C.InputValues{
+		x: 6,
+		y: 7,
+		z: 8,
+	}
 
-	log.Printf("Go says compute_value_a(%d, %d) = %d", x, y, C.compute_value_a(x, y))
+	output := C.compute_values(&input, 3)
+
+	log.Printf("Go says compute_values(%s) = %s", C.GoString(C.InputValues_to_string(&input)), C.GoString(C.OutputValues_to_string(&output)))
 }

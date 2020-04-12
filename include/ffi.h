@@ -14,11 +14,27 @@
 namespace energonsoftware {
 #endif // __cplusplus
 
+typedef struct {
+  int64_t x;
+  int64_t y;
+  int64_t z;
+} InputValues;
+
+typedef struct {
+  int64_t x;
+  int64_t y;
+  int64_t z;
+} OutputValues;
+
 #ifdef __cplusplus
 extern "C" {
 #endif // __cplusplus
 
-int32_t compute_value_a(int32_t x, int32_t y);
+char *InputValues_to_string(const InputValues *this_);
+
+char *OutputValues_to_string(const OutputValues *this_);
+
+OutputValues compute_values(const InputValues *input, int64_t scale);
 
 #ifdef __cplusplus
 } // extern "C"

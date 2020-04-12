@@ -13,7 +13,7 @@ mkdir -p $LIB
 set -x
 
 # can't cargo install :(
-$CARGO build
-cp target/debug/libcrustgo.a $LIB
+$CARGO build --release
+cp target/release/libcrustgo.a $LIB
 
 $BINDGEN --config $BINDGEN_CONFIG --crate $RUSTLIB --output $INCLUDE/$BINDGEN_HEADER

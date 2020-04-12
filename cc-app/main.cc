@@ -3,10 +3,11 @@
 
 int main(int argc, char *argv[])
 {
-    const int32_t x = 6;
-    const int32_t y = 7;
+    energonsoftware::InputValues input{6, 7, 8};
+    auto output = energonsoftware::compute_values(&input, 3);
 
-    std::cout << "C++ says compute_value_a(" << x << ", " << y << ") = " << energonsoftware::compute_value_a(x, y) << std::endl;
+    std::cout << "C++ says compute_values(" << energonsoftware::InputValues_to_string(&input) << ") = "
+              << energonsoftware::OutputValues_to_string(&output) << std::endl;
 
     return 0;
 }
