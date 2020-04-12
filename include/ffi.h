@@ -36,6 +36,8 @@ char *OutputValues_to_string(const OutputValues *this_);
 
 OutputValues compute_values(const InputValues *input, int64_t scale);
 
+void reorder_values(int64_t *inputs, uintptr_t len);
+
 #ifdef __cplusplus
 } // extern "C"
 #endif // __cplusplus
