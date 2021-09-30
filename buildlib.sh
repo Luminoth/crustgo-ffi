@@ -4,6 +4,7 @@ LIB=`pwd`/lib
 INCLUDE=`pwd`/include
 RUSTLIB=rust-lib
 CARGO=cargo
+
 BINDGEN=cbindgen
 BINDGEN_CONFIG=cbindgen.toml
 BINDGEN_HEADER=ffi.h

@@ -2,6 +2,7 @@
 
 members = [
     "rust-lib",
+    "rust-lib-cxx",
 ]
 
 [profile.release]

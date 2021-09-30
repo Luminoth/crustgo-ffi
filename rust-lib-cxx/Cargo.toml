@@ -1,0 +1,15 @@
+[package]
+name = "rust-lib-cxx"
+version = "0.1.0"
+authors = ["Shane Lillie <ignignokterr@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "crustgo_cxx"
+path = "src/lib.rs"
+crate-type = ["staticlib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cxx = "1.0"
