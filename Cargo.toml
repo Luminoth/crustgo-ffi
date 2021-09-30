@@ -3,3 +3,6 @@
 members = [
     "rust-lib",
 ]
+
+[profile.release]
+debug = true
