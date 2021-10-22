@@ -2,7 +2,7 @@
 name = "rust-lib-cxx"
 version = "0.1.0"
 authors = ["Shane Lillie <ignignokterr@gmail.com>"]
-edition = "2018"
+edition = "2021"
 
 [lib]
 name = "crustgo_cxx"

@@ -35,9 +35,10 @@ pub extern "C" fn OutputValues_to_string(this: &OutputValues) -> *mut c_char {
         .into_raw()
 }
 
+/// # Safety
 #[no_mangle]
-pub extern "C" fn reorder_values(inputs: *mut i64, len: usize) {
-    let inputs_slice = unsafe {
+pub unsafe extern "C" fn reorder_values(inputs: *mut i64, len: usize) {
+    let inputs_slice = {
         assert!(!inputs.is_null());
         std::slice::from_raw_parts_mut(inputs, len)
     };
